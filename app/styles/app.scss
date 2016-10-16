@@ -1,6 +1,14 @@
-// @import 'yoga-sass/assets/yoga';
-// @import 'normalize-css/normalize';
+$c-navleft: #17141f;
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import '_reset';
+
+.nav-bar {
+  background: gray;
+}
+
+.logo {
+  height: 2rem;
+}

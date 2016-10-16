@@ -1,6 +1,6 @@
 /* eslint-env qunit */
 
-import from '../../app/exercise/create-message-item';
+import createMessageItem from '../../app/exercise/create-message-item';
 
 function fixWhitespace(str) {
   return str.replace(/\s+/g, ' ').trim();
