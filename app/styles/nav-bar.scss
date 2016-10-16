@@ -1,0 +1,64 @@
+.nav-bar {
+  display: flex;
+  width: 15rem;
+  background: $c-navleft;
+  color: $c-white;
+
+  &__container {
+    max-width: 14rem;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+
+    &--search {
+      display: flex;
+      align-items: center;
+      width: 99%;
+      margin: 1rem auto;
+      padding: 0.2rem 0.5rem;
+      border: 0.1rem solid $c-border;
+      background: $c-searchback;
+      color: $c-search;
+    }
+  }
+
+  .logo {
+    height: 2rem;
+    margin: 0 auto;
+  }
+
+  h4 {
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: lighter;
+  }
+
+  &__options {
+    margin-left: 0.2rem;
+
+    &--item {
+      display: flex;
+      align-items: center;
+    }
+
+    &--text {
+      margin: 0.3rem 0;
+      padding-left: 1rem;
+    }
+  }
+
+  .more {
+    margin: 0 auto;
+
+    &__title {
+      padding: 0.4rem 0;
+      border-bottom: 0.1rem solid $c-border;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}

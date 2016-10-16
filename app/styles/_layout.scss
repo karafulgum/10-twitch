@@ -1,0 +1,16 @@
+.full-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: red;
+
+  &__content {
+    flex-grow: 1;
+
+    &--container {
+      max-width: 65rem;
+      margin: 0 auto;
+    }
+  }
+}
