@@ -1,5 +1,12 @@
 .right-bar {
   display: flex;
-  width: 15rem;
-  background: green;
+  flex-direction: column;
+  width: 20rem;
+  background: $c-rightbar;
+
+  &__container {
+    width: 14rem;
+    min-width: 18rem;
+    margin: 0 auto;
+  }
 }
