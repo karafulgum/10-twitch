@@ -1,14 +1,11 @@
 import createGameElement from './create-game-element';
-//
-// export default function showGamesInList(itemOne, itemTwo) {
-//   console.log(Array.from(itemOne));
-// }
-//
-export default function showGamesInList(data) {
- // debugger;
+
+export default function showGamesInList(parentEl, data) {
+  parentEl.innerHTML = '';
+
   for (let i = 0; i < data.length; i++) {
-    const info = data[i];
-    info.appendChild(data[i]);
+    const gameItem = data[i];
+    const el = createGameElement(gameItem);
+    parentEl.appendChild(el);
   }
-  const gameItem = document.createElement('div');
 }
