@@ -7,7 +7,7 @@
   &__container {
     max-width: 14rem;
     margin: 0 auto;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
   }
 
   &__top {
@@ -89,22 +89,47 @@
   }
 }
 
-.column {
+.grid {
+  display: flex;
+}
+
+.column1 {
+  display: flex;
+  flex-basis: calc(50%);
+  flex-direction: column;
+
+  &__item {
+    color: $c-subtitle;
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
+}
+
+.column2 {
+  display: flex;
+  flex-basis: calc(50%);
+  flex-direction: column;
+
+  &__item {
+    color: $c-subtitle;
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
+}
+
+.buttons {
+  position: relative;
+  backround: $c-navleft;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
-  color: $c-subtitle;
-  font-size: 0.7rem;
-  text-decoration: none;
+  margin: 1rem;
+}
 
-  &__1 {
-    display: flex;
-    flex-basis: calc(50%);
-    flex-direction: column;
-  }
-
-  &__2 {
-    display: flex;
-    flex-basis: calc(50%);
-    flex-direction: column;
-  }
+.btn {
+  min-width: 5rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: $c-button;
+  color: $c-white;
 }
