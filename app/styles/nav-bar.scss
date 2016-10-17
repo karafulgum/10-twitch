@@ -68,12 +68,12 @@
 }
 
 .group {
-  margin: 1rem 0;
   display: flex;
+  margin: 1rem 0;
 
   &__text {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     padding-left: 0.2rem;
 
     &--title {
@@ -86,5 +86,25 @@
       color: $c-subtitle;
       font-size: 0.7rem;
     }
+  }
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  color: $c-subtitle;
+  font-size: 0.7rem;
+  text-decoration: none;
+
+  &__1 {
+    display: flex;
+    flex-basis: calc(50%);
+    flex-direction: column;
+  }
+
+  &__2 {
+    display: flex;
+    flex-basis: calc(50%);
+    flex-direction: column;
   }
 }
