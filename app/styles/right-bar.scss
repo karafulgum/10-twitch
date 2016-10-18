@@ -43,12 +43,19 @@
   color: $c-caret;
 }
 
+.button {
+  display: flex;
+  width: 50%;
+}
+
 .btn-right {
-  min-width: 5rem;
+  flex-basis: calc(100% - 10px);
+  margin-right: 10px;
   padding: 0.5rem 0;
   border: 0;
   background: $c-button;
   color: $c-white;
+  text-align: center;
 
   &:hover {
     background: $c-righthover;
