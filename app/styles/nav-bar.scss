@@ -1,28 +1,36 @@
 .nav-bar {
   display: flex;
   // position: fixed;
-  width: 15rem;
+  width: 25%;
+  min-width: 14rem;
   background: $c-navleft;
   color: $c-white;
 
   &__container {
-    width: 14rem;
-    min-width: 10rem;
-    margin: 0 auto;
+    // width: 50%;
+    // min-width: 10rem;
+    // margin: 0 auto;
     padding: 0.5rem;
   }
 
   &__top {
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
 
     &--search {
       display: flex;
       align-items: center;
-      width: 99%;
       margin: 1rem auto;
       padding: 0.2rem 0.5rem;
       border: 0.1rem solid $c-border;
+      background: $c-searchback;
+      color: $c-search;
+    }
+
+    &--item {
+      padding-left: 1rem;
+      border: 0;
       background: $c-searchback;
       color: $c-search;
     }

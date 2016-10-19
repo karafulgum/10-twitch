@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // width: 90%;
   margin: 2rem auto;
 
   &__title {
@@ -19,22 +20,19 @@
 }
 
 .results {
-  display: flex;
-  flex-basis: calc(100% / 4 - 1rem - 1rem);
-  flex-wrap: wrap;
-  // justify-content: flex-start;
-  margin: 1rem;
-}
-
-.frame {
-  // max-width: 13rem;
-
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // flex-basis: width(100% / 4);
+  justify-content: center;
 }
 
 .game-item {
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 0.5rem;
+  // display: flex;
+  // flex-direction: column-reverse;
+  // width: 30%;
+  // flex-basis: width(100% / 6);
+  // margin: 1rem;
 
   &__name {
     margin: 0.5rem 0;
@@ -43,7 +41,7 @@
   }
 
   &__popularity {
-    margin: 0 0 0.5rem;
+    margin: 0;
     color: $c-subtitle;
     font-size: 12px;
     font-weight: normal;
@@ -51,9 +49,5 @@
     &::after {
       content: ' viewers';
     }
-  }
-
-  &__pic {
-    width: 13rem;
   }
 }
