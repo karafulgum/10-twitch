@@ -1,0 +1,59 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  &__search {
+    width: 15rem;
+    padding: 0.5rem 0.1rem 0.5rem 0.2rem;
+    border: 1px solid $c-mainsearch;
+    color: $c-mainsearch;
+    font-size: 0.7rem;
+  }
+}
+
+.results {
+  display: flex;
+  flex-basis: calc(100% / 4 - 1rem - 1rem);
+  flex-wrap: wrap;
+  // justify-content: flex-start;
+  margin: 1rem;
+}
+
+.frame {
+  // max-width: 13rem;
+
+}
+
+.game-item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0.5rem;
+
+  &__name {
+    margin: 0.5rem 0;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  &__popularity {
+    margin: 0 0 0.5rem;
+    color: $c-subtitle;
+    font-size: 12px;
+    font-weight: normal;
+
+    &::after {
+      content: ' viewers';
+    }
+  }
+
+  &__pic {
+    width: 13rem;
+  }
+}

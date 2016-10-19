@@ -10,6 +10,7 @@ $c-hover: #201c2c;
 $c-rightbar: #efeef1;
 $c-black: #232127;
 $c-caret: #c0c0c0;
+$c-mainsearch: #a9a9a9;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
@@ -18,3 +19,4 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import '_layout';
 @import 'nav-bar';
 @import 'right-bar';
+@import 'content';
