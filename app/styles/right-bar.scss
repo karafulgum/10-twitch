@@ -5,6 +5,7 @@
   width: 25%;
   min-width: 20rem;
   background: $c-rightbar;
+  overflow-y: scroll;
 
   &__container {
     // margin: 0 auto;

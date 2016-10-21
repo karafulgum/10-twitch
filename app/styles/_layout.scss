@@ -1,9 +1,11 @@
 .full-page {
   display: flex;
+  height: 100vh;
 
   &__content {
-    width: 100%;
-    min-width: 30rem;
+    min-width: 60%;
+    // min-width: 30rem;
+    overflow: scroll;
     // flex-grow: 1;
 
     &--container {

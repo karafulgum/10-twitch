@@ -1,10 +1,12 @@
 .nav-bar {
   display: flex;
+  flex-direction: column;
   // position: fixed;
   width: 25%;
   min-width: 14rem;
   background: $c-navleft;
   color: $c-white;
+  overflow-y: scroll;
 
   &__container {
     // width: 50%;
@@ -21,8 +23,9 @@
     &--search {
       display: flex;
       align-items: center;
-      margin: 1rem auto;
-      padding: 0.2rem 0.5rem;
+      width: 100%;
+      margin: 1rem auto 0.5rem;
+      padding: 0.3rem;
       border: 0.1rem solid $c-border;
       background: $c-searchback;
       color: $c-search;
