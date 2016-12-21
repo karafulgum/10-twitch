@@ -1,0 +1,17 @@
+.full-page {
+  display: flex;
+  height: 100vh;
+
+  &__content {
+    min-width: 60%;
+    // min-width: 30rem;
+    overflow: scroll;
+    // flex-grow: 1;
+
+    &--container {
+      width: 95%;
+      // flex-grow: 1;
+      margin: 0 auto;
+    }
+  }
+}

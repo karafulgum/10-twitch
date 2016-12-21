@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>10-twitch</title>
+  <title>Twitch</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
-  <script src="/app.js" charset="utf-8"></script>
+
+  <div class="full-page">
+    <div class="nav-bar">
+      <div class="nav-bar__container">
+        <div class="nav-bar__top">
+          <img class="logo" src="./images/twitch.png" alt="Twitch Logo">
+          <div class="nav-bar__top--search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" value="Search" class="nav-bar__top--item">
+          </div>
+        </div>
+        <div class="nav-bar__options">
+          <div class="nav-bar__options nav-bar__options--item">
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+            <p class="nav-bar__options--item nav-bar__options--text">Games</p>
+          </div>
+          <div class="nav-bar__options nav-bar__options--item">
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+            <p class="nav-bar__options--item nav-bar__options--text">Channels</p>
+          </div>
+          <div class="nav-bar__options nav-bar__options--item">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <p class="nav-bar__options--item nav-bar__options--text">Videos</p>
+          </div>
+          <div class="nav-bar__options nav-bar__options--item">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <p class="nav-bar__options--item nav-bar__options--text">Creative</p>
+          </div>
+        </div>
+        <div class="more">
+          <p class="more__title">Free With Prime</p>
+          <div class="group">
+            <img class="image" src="./images/hearthstone.jpg" alt="Hearthstone">
+            <div class="group__text">
+              <p class="group__text--title">Newest Hero, Tyrande Whisperwind</p>
+              <p class="group__text--subtitle">Heathstone</p>
+            </div>
+          </div>
+          <div class="group">
+            <img class="image" src="./images/streamline.png" alt="Streamline">
+            <div class="group__text">
+              <p class="group__text--title">Streamline with 24 exclusive items</p>
+              <p class="group__text--subtitle">Streamline</p>
+            </div>
+          </div>
+          <p class="more__title">Recommended Channels</p>
+          <div class="group">
+            <img class="image" src="./images/levelup.png" alt="Level Up Live">
+            <div class="group__text">
+              <p class="group__text--title">leveluplive</p>
+              <p class="group__text--subtitle">Streaming Ultimate Marvel</p>
+            </div>
+          </div>
+          <div class="group">
+            <img class="image" src="./images/gdq.png" alt="GamesDoneQuick">
+            <div class="group__text">
+              <p class="group__text--title">GamesDoneQuick</p>
+              <p class="group__text--subtitle">Streaming Luigi's Mansion</p>
+            </div>
+          </div>
+          <div class="group">
+            <img class="image" src="./images/alien.jpeg" alt="Alienware">
+            <div class="group__text">
+              <p class="group__text--title">Alienware</p>
+              <p class="group__text--subtitle">Streaming Gaming Talk Shows</p>
+            </div>
+          </div>
+        </div>
+        <p class="more__title">More at Twitch</p>
+        <div class="grid">
+          <div class="column1">
+            <a href="#" class="column1__item">About</a>
+            <a href="#" class="column1__item">Blog</a>
+            <a href="#" class="column1__item">Cookie Policy</a>
+            <a href="#" class="column1__item">Help</a>
+            <a href="#" class="column1__item">Language</a>
+            <a href="#" class="column1__item">Partners</a>
+            <a href="#" class="column1__item">Store</a>
+          </div>
+          <div class="column2">
+            <a href="#" class="column2__item">Advertisers</a>
+            <a href="#" class="column2__item">Creative</a>
+            <a href="#" class="column2__item">Developers</a>
+            <a href="#" class="column2__item">Jobs</a>
+            <a href="#" class="column2__item">Music</a>
+            <a href="#" class="column2__item">Press</a>
+            <a href="#" class="column2__item">Terms</a>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn-left">Log In</button>
+          <button class="btn-left">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="full-page__content">
+      <div class="full-page__content--container">
+        <div class="top">
+        <p class="top__title">All Games</p>
+        <input type="Search" value="Search for a game" class="top__search">
+        </div>
+        <ul class="results"></ul>
+      </div>
+
+    </main>
+
+    <div class="right-bar">
+      <i class="fa fa-caret-right" aria-hidden="true"></i>
+      <div class="right-bar__container">
+        <h2 class="right-bar__header">You're not logged in!</h2>
+        <p class="right-bar__paragraph">If you don't have an account, go ahead and sign up. It takes like two seconds and it's totally worth it.</p>
+        <ul class="right-bar__options">
+          <li class="right-bar__options--item">Follow channels you enjoy watching</li>
+          <li class="right-bar__options--item">Get notifications when they go live</li>
+          <li class="right-bar__options--item">Chat with your fellow viewers</li>
+          <li class="right-bar__options--item">Send and receive direct messages</li>
+          <li class="right-bar__options--item">Start your own broadcast</li>
+        </ul>
+        <div class="button">
+        <button class="btn-right">Log In</button>
+        <button class="btn-right">Sign Up</button>
+      </div>
+      </div>
+    </div>
+
+
+
+    <script src="/app.js" charset="utf-8"></script>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,51 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  &__search {
+    width: 15rem;
+    padding: 0.5rem 0.1rem 0.5rem 0.2rem;
+    border: 1px solid $c-mainsearch;
+    color: $c-mainsearch;
+    font-size: 0.7rem;
+  }
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-item {
+  flex-basis: calc(100% / 3 - 2rem);
+  flex-grow: 1;
+  margin: 1rem;
+
+  &__name {
+    margin: 0.5rem 0;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  &__popularity {
+    margin: 0;
+    color: $c-subtitle;
+    font-size: 12px;
+    font-weight: normal;
+
+    &::after {
+      content: ' viewers';
+    }
+  }
+
+  &__pic {
+    width: 13rem;
+  }
+}
